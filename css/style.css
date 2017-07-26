@@ -166,7 +166,9 @@ body {
   background-color: #5f29cc;
 }
 .btn-more {
+  padding: 16px 0;
   border: 1px solid #ffffff;
+  box-sizing: border-box;
 }
 .main-nav {
   width: 430px;
