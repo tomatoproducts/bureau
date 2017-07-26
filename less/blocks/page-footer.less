@@ -44,7 +44,7 @@
 .page-footer__social-link {
   position: relative;
   display: block;
-  padding-left: 40px;
+  padding-left: 36px;
 
   font-size: 12px;
   line-height: 12px;
@@ -54,7 +54,37 @@
 }
 
 .page-footer__social-link::before {
+  content: "";
+  position: absolute;
+  // bottom: 0px;
+  // left: 0px;
 
+    top: 50%;
+    left: 0;
+    transform: translatey(-50%);
+
+
+  width: 22px;
+  height: 23px;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -10px -57px;
+}
+
+.page-footer__social-link--vk::before {
+  background-position: -10px -399px;
+}
+
+.page-footer__social-link--tw::before {
+  background-position: -10px -356px;
+}
+
+.page-footer__social-link--in::before {
+  background-position: -10px -100px;
+}
+
+.page-footer__social-link--inst::before {
+  background-position: -10px -143px;
 }
 
 .page-footer__bottom {
@@ -65,7 +95,7 @@
   display: block;
   width: 156px;
   height: 35px;
-  margin-right: 58px;
+  margin-right: 60px;
 }
 
 .page-footer__logo-link {
@@ -77,6 +107,7 @@
 }
 
 .page-footer__copyright {
+
   padding: 10px 0;
   font-size: 12px;
   line-height: 12px;

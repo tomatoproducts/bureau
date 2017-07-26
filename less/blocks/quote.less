@@ -1,0 +1,128 @@
+.quote {
+  position: relative;
+  width: 1200px;
+  height: 580px;
+  margin: 0 auto;
+  padding: 0 120px;
+}
+
+.quote__slider {
+  position: relative;
+  width: 1200px;
+  height: 580px;
+  margin: 0 auto;
+}
+
+.quote__slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  background-image: url("../img/tinkof.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+
+  overflow: hidden;
+}
+
+.quote__author {
+  position: relative;
+  margin: 0;
+  margin-left: 142px;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 50px;
+}
+
+.quote__author::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 3px;
+
+  width: 37px;
+  height: 4px;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -10px -186px;
+}
+
+.quote__text {
+  width: 445px;
+  margin: 0;
+  margin-left: 142px;
+}
+
+.toggler-prev {
+  width: 50px;
+  height: 50px;
+
+  padding: 18px 21px;
+  border: none;
+  border-radius: 50%;
+  background-color: #efe9fa;
+
+  &--quote {
+    position: absolute;
+    top: 267px;
+    left: 0;
+  }
+
+  &--quote::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 8px;
+    height: 13px;
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    background-position: -10px -276px;
+  }
+}
+
+.toggler-next {
+  width: 50px;
+  height: 50px;
+
+  padding: 18px 21px;
+  border: none;
+  border-radius: 50%;
+  background-color: #efe9fa;
+
+  &--quote {
+    position: absolute;
+    top: 267px;
+    right: 0px;
+  }
+
+  &--quote:hover {
+    background-color: #5f29cc;
+  }
+
+  &--quote::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 8px;
+    height: 13px;
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    background-position: -10px -243px;
+  }
+}
+.toggler-next--quote:hover::before {
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -10px -210px;
+}

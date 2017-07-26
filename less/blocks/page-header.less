@@ -29,9 +29,10 @@
 }
 
 .page-header__phone {
+  position: relative;
   width: 156px;
   margin-right: 50px;
-  padding-left: 83px;
+  padding-left: 73px;
   font-size: 22px;
   line-height: 44px;
   letter-spacing: -0.04em;
@@ -39,11 +40,29 @@
 }
 
 .page-header__phone::after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 0;
 
+  width: 27px;
+  height: 27px;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -10px -309px;
 }
 
 .page-header__phone::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 36px;
 
+  width: 27px;
+  height: 27px;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -10px -10px;
 }
 
 .page-header__login {
@@ -64,7 +83,7 @@
 .page-header__bottom {
   min-height: 501px;
 
-  background-color: #160e11;
+  // background-color: #160e11;
   background-image:  url("../img/bg1.jpg");
   background-repeat: no-repeat;
   background-position: center -98px;
@@ -77,11 +96,25 @@
 }
 
 .page-header__title {
+  position: relative;
   width: 454px;
-  padding-bottom: 27px;
+  padding-bottom: 24px;
   margin-bottom: 24px;
   font-size: 40px;
   line-height: 50px;
+}
+
+.page-header__title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 3px;
+
+  width: 37px;
+  height: 4px;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -10px -186px;
 }
 
 .page-header__text {

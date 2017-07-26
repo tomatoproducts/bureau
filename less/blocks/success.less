@@ -1,0 +1,123 @@
+.success {
+  padding: 56px 0;
+  padding-bottom: 60px;
+}
+
+.success__title {
+  width: 330px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  font-size: 40px;
+  font-weight: 400px;
+  line-height: 50px;
+  letter-spacing: 0.02em;
+}
+
+.success__slider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+
+
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.success__slide {
+  width: 305px;
+  height: 380px;
+  margin-right: 20px;
+  padding-top: 150px;
+  padding-bottom: 26px;
+  padding-right: 30px;
+  padding-left: 27px;
+
+  background-image: url("../img/slider1.png");
+  background-repeat: no-repeat;
+  background-position: center 30px;
+  box-sizing: border-box;
+
+  box-shadow: 0 0 25px 10px #f6f6f6;
+
+  &--2 {
+    background-image: url("../img/slider2.png");
+  }
+
+  &--3 {
+    background-image: url("../img/slider3.png");
+  }
+}
+
+.success__slide:nth-child(3n) {
+  margin-right: 0;
+}
+
+.success__slide-author {
+  margin: 0;
+  text-align: center;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+.success__slide-company {
+  margin-bottom: 8px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 22px;
+  color: #808080;
+}
+
+.success__slide-text {
+  margin: 0px;
+}
+
+.toggler-prev--success {
+  position: absolute;
+  top: 161px;
+  left: 0;
+}
+
+.toggler-prev--success::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 8px;
+  height: 13px;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -10px -276px;
+}
+
+.toggler-next--success {
+  position: absolute;
+  top: 161px;
+  right: 0;
+}
+
+.toggler-next--success:hover {
+  background-color: #5f29cc;
+}
+
+.toggler-next--success::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 8px;
+  height: 13px;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -10px -243px;
+}
+
+.toggler-next--success:hover::before {
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -10px -210px;
+}
