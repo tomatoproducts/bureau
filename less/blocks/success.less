@@ -121,3 +121,107 @@
   background-repeat: no-repeat;
   background-position: -10px -210px;
 }
+
+@media (min-width: 2880px) {
+  .success {
+    padding: 120px 0;
+    padding-bottom: 120px;
+  }
+
+  .success__title {
+    width: 660px;
+    margin: 0 auto;
+    margin-bottom: 110px;
+    font-size: 80px;
+    line-height: 100px;
+    letter-spacing: 0.02em;
+  }
+
+  .success__slider {
+    width: 2400px;
+  }
+
+  .success__slide {
+    width: 615px;
+    height: 760px;
+    margin-right: 40px;
+    padding-top: 300px;
+    padding-bottom: 55px;
+    padding-right: 60px;
+    padding-left: 67px;
+
+    background-image: url("../img/2slider1.png");
+    background-repeat: no-repeat;
+    background-position: center 60px;
+    box-sizing: border-box;
+
+    box-shadow: 0 0 40px 15px #f6f6f6;
+
+    &--2 {
+      background-image: url("../img/2xslider2.png");
+    }
+
+    &--3 {
+      background-image: url("../img/2xslider3.png");
+    }
+  }
+
+  .success__slide-author {
+    margin: 0;
+    font-size: 44px;
+    line-height: 44px;
+  }
+
+  .success__slide-company {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 44px;
+    color: #808080;
+  }
+
+  .toggler-prev--success {
+    position: absolute;
+    top: 322px;
+    left: 0;
+  }
+
+  .toggler-prev--success::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 15px;
+    height: 24px;
+    background-position: -10px -390px;
+    background-image: url("../img/sprite2.png");
+    background-repeat: no-repeat;
+  }
+
+  .toggler-next--success {
+    position: absolute;
+    top: 322px;
+    right: 0;
+  }
+
+  .toggler-next--success::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 16px;
+    height: 24px;
+    background-position: -10px -346px;
+    background-image: url("../img/sprite2.png");
+    background-repeat: no-repeat;
+  }
+
+  .toggler-next--success:hover::before {
+    background-image: url("../img/sprite2.png");
+    background-repeat: no-repeat;
+    background-position: -10px -302px;
+  }
+}

@@ -65,3 +65,62 @@
   text-decoration: none;
   text-align: center;
 }
+
+@media (min-width: 2880px) {
+  .category {
+    padding: 60px 0;
+    padding-bottom: 115px;
+  }
+
+  .category__container {
+    display: flex;
+    width: 2400px;
+    margin: 0 auto;
+    padding: 0 240px;
+  }
+
+  .category__item {
+    padding-top: 257px;
+
+    background-image: url("../img/2mentor.svg");
+
+    &--1 {
+      width: 628px;
+      margin-right: 107px;
+      margin-left: 107px;
+    }
+
+    &--2 {
+      width: 496px;
+      margin-right: 144px;
+      background-image: url("../img/2expert.svg");
+    }
+
+    &--3 {
+      width: 565px;
+      background-image: url("../img/2speaker.svg");
+    }
+  }
+
+  .category__item-title {
+    margin-bottom: 45px;
+    font-size: 44px;
+    line-height: 44px;
+  }
+
+  .category__item-text {
+    margin: 0;
+    margin-bottom: 52px;
+  }
+
+  .btn-select {
+    display: block;
+    width: 290px;
+    padding: 27px 0;
+
+    border: 2px solid #6a37cf;
+    border-radius: 3px;
+    box-sizing: border-box;
+    line-height: 32px;
+  }
+}

@@ -166,3 +166,152 @@
   border: 1px solid #ffffff;
   box-sizing: border-box;
 }
+
+@media (min-width: 2880px) {
+  .page-header__container {
+    width: 2400px;
+    padding: 72px 240px;
+    padding-bottom: 52px;
+    margin: 0 auto;
+
+    &--bottom {
+      display: flex;
+      min-height: 1001px;
+
+      padding: 0 240px;
+    }
+  }
+
+  .page-header__logo {
+    width: 315px;
+    height: 70px;
+    margin-right: 90px;
+  }
+
+  .page-header__phone {
+    position: relative;
+    width: 302px;
+    margin-right: 100px;
+    padding-left: 150px;
+    font-size: 44px;
+    line-height: 44px;
+  }
+
+  .page-header__phone::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+
+    width: 54px;
+    height: 54px;
+    background-image: url("../img/sprite2.png");
+    background-repeat: no-repeat;
+    background-position: -10px -434px;
+  }
+
+  .page-header__phone::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 73px;
+
+    width: 54px;
+    height: 54px;
+    background-image: url("../img/sprite2.png");
+    background-repeat: no-repeat;
+    background-position: -10px -10px;
+  }
+  .page-header__login {
+    display: block;
+    width: 280px;
+    padding: 27px 0;
+    border: 2px solid #5f29cc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+  }
+
+  .page-header__bottom {
+    min-height: 1001px;
+
+  // background-color: #160e11;
+    background-image:  url("../img/2xbg1.jpg");
+    background-repeat: no-repeat;
+    background-position: center -98px;
+
+  }
+
+  .page-header__wrapp {
+    width: 950px;
+    margin-right: 1080px;
+  }
+
+  .page-header__title {
+    position: relative;
+    width: 915px;
+    padding-bottom: 68px;
+    margin-bottom: 58px;
+    font-size: 80px;
+    line-height: 100px;
+  }
+
+  .page-header__title::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 3px;
+
+    width: 74px;
+    height: 6px;
+
+    background-image: url("../img/sprite2.png");
+    background-repeat: no-repeat;
+    background-position: -10px -276px;
+  }
+
+  .page-header__text {
+    margin-bottom: 72px;
+  }
+
+  .page-header__author {
+    width: 370px;
+    align-self: flex-end;
+    padding: 40px 0;
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: -0.03em;
+    text-align: right;
+  }
+
+  .page-header__author-discript {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .page-header__author-sphere {
+    border-bottom: 2px solid #ffffff;
+  }
+
+  .btn {
+    width: 370px;
+
+    padding: 35px 0;
+    border-radius: 3px;
+
+    font-size: 28px;
+    line-height: 28px;
+}
+
+  .btn-solve {
+    margin-right: 20px;
+    background-color: #5f29cc;
+  }
+
+  .btn-more {
+    padding: 33px 0;
+    border: 2px solid #ffffff;
+  }
+}
